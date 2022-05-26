@@ -160,35 +160,62 @@ namespace ConsoleApp
             //string[] nomi = { "luca", "marco", "anna", "anno" };
             //foreach(string nome in nomi){
             //    Console.WriteLine(nome);}
-            greetings();
-            string n = null;
-            int o = 9;
-            int num1 = 9; int num2 = 9;
-            rename(age: o, nome: n, num1: num1, num2: num2); //pazzesco D:
-            rename(n, num1, num2);
+            //greetings();
+            //string n = null;
+            //int o = 9;
+            //int num1 = 9; int num2 = 9;
+            //rename(age: o, nome: n, num1: num1, num2: num2); //pazzesco D:
+            //rename(n, num1, num2);
+            
+            //matrice esempio
+            string[,] codici = new string [3,2]
+                {
+            {"c1","r01", },
+            {"c2","r02" },
+            {"c3","r03" }
+            };
+            //Console.WriteLine(codici[0,0]);
+
+            //foreach in matrice
+
+            //foreach(string c in codici)
+            //{
+            //    Console.WriteLine(c + " colonna");
+            //}
+
+            //for in matrice con stampa di tutti i valori
+
+            for(int i = 0; i<codici.GetLength(0); i++)
+            {
+                Console.WriteLine("interazione numero " + i);
+                for(int c=0; c<codici.GetLength(1); c++)
+                {
+                    Console.WriteLine(c + " valori: " + codici[i, c]);
+                }
+            }
         }
         //methods and functions
-        static void greetings()
-        {
-            Console.WriteLine("greetings from C# function");
-        }
-        static int rename(string nome, int age, int num1, int num2)
-        {
-            if (nome == null)
-            {
-                nome = "Frank";
-            }
-            Console.WriteLine($"hi {nome}, you have {age}");
-            int sum = num1 + num2;
-            Console.WriteLine(sum);
-            return sum;
-        }
-        //method overloading
-        static int rename(string nome, int num1, int num2)
-        {
-            int per = num1 * num2;
-            Console.WriteLine($"your name {nome} is {per} years old");
-            return per;
-        }
+        //static void greetings()
+        //{
+        //    Console.WriteLine("greetings from C# function");
+        //}
+        //static int rename(string nome, int age, int num1, int num2)
+        //{
+        //    if (nome == null)
+        //    {
+        //        nome = "Frank";
+        //    }
+        //    Console.WriteLine($"hi {nome}, you have {age}");
+        //    int sum = num1 + num2;
+        //    Console.WriteLine(sum);
+        //    return sum;
+        //}
+        ////method overloading
+        //static int rename(string nome, int num1, int num2)
+        //{
+        //    int per = num1 * num2;
+        //    Console.WriteLine($"your name {nome} is {per} years old");
+        //    return per;
+       // }
     }
 }
