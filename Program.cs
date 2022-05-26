@@ -163,21 +163,32 @@ namespace ConsoleApp
             greetings();
             string n = null;
             int o = 9;
-            rename(age: o, nome: n); //pazzesco D:
-
+            int num1 = 9; int num2 = 9;
+            rename(age: o, nome: n, num1: num1, num2: num2); //pazzesco D:
+            rename(n, num1, num2);
         }
         //methods and functions
         static void greetings()
         {
             Console.WriteLine("greetings from C# function");
         }
-        static void rename(string nome, int age)
+        static int rename(string nome, int age, int num1, int num2)
         {
             if (nome == null)
             {
                 nome = "Frank";
             }
             Console.WriteLine($"hi {nome}, you have {age}");
+            int sum = num1 + num2;
+            Console.WriteLine(sum);
+            return sum;
+        }
+        //method overloading
+        static int rename(string nome, int num1, int num2)
+        {
+            int per = num1 * num2;
+            Console.WriteLine($"your name {nome} is {per} years old");
+            return per;
         }
     }
 }
