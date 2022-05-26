@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace ConsoleApp
 {
     class Program
@@ -158,6 +157,27 @@ namespace ConsoleApp
             //    }
             //    Console.WriteLine();
             //}
+            //string[] nomi = { "luca", "marco", "anna", "anno" };
+            //foreach(string nome in nomi){
+            //    Console.WriteLine(nome);}
+            greetings();
+            string n = null;
+            int o = 9;
+            rename(age: o, nome: n); //pazzesco D:
+
+        }
+        //methods and functions
+        static void greetings()
+        {
+            Console.WriteLine("greetings from C# function");
+        }
+        static void rename(string nome, int age)
+        {
+            if (nome == null)
+            {
+                nome = "Frank";
+            }
+            Console.WriteLine($"hi {nome}, you have {age}");
         }
     }
 }
