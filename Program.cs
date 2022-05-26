@@ -149,16 +149,15 @@ namespace ConsoleApp
             //{
             //    Console.WriteLine("You wrote an enormous number and broke the app! D:");
             //}
-
-            for (int i = 0; i <= 6; i++)
-            {
-
-                for (int j = i; j <= 6; j++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //cicli for / foreach
+            //for (int i = 0; i <= 6; i++)
+            //{
+            //    for (int j = i; j <= 6; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
         }
     }
 }
